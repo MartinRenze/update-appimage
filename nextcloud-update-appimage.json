@@ -1,0 +1,6 @@
+{
+    "name": "nextcloud",
+    "url": "https://api.github.com/repos/nextcloud/desktop/releases/latest",
+    "version": "https://github.com/nextcloud/desktop/releases/download/v3.7.3/Nextcloud-3.7.3-x86_64.AppImage",
+    "mode": "github-download"
+}
