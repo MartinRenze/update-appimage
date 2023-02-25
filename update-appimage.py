@@ -6,6 +6,7 @@ import os
 
 # path to program folder
 PROGRAM_PATH = "/home/ubuntu/Programs/"
+PATH_OF_SCRIPT = "/media/ubuntu/igel/Projekte/scripts/update-appimage/"
 
 # available modes for download
 # redirect-https-download for linphone
@@ -76,7 +77,7 @@ def download_appimage(config, location):
 
 def update_all():
 
-    for config_file in glob.glob("*-update-appimage.json"):
+    for config_file in glob.glob(PATH_OF_SCRIPT + "*-update-appimage.json"):
         f = open(config_file)
         config = json.load(f)
         mode = config["mode"]        
