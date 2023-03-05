@@ -48,7 +48,7 @@ def download_appimage(config, location):
     name = config["name"]
 
     if config["version"] != location:
-        print("updating " + name)
+        print("updating " + name + " to version " + location)
 
         # download new file
         response = requests.get(location, allow_redirects=True, stream=True)
@@ -68,7 +68,8 @@ def download_appimage(config, location):
         # set new version in config
         config["version"] = location
         json_object = json.dumps(config, indent=4)
-        with open(name + "-update-appimage.json", "w") as outfile:
+
+        with open(PATH_OF_SCRIPT + name + "-update-appimage.json", "w") as outfile:
             outfile.write(json_object)
         
     else:

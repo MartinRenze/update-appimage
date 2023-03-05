@@ -1,6 +1,6 @@
 {
     "name": "linphone",
     "url": "https://download.linphone.org/releases/linux/latest_app",
-    "version": "https://download.linphone.org/releases/linux/app/Linphone-5.0.11.AppImage",
+    "version": "https://download.linphone.org/releases/linux/app/Linphone-5.0.12.AppImage",
     "mode": "redirect-https-download"
 }
